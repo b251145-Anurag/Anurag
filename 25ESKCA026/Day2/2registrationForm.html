@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UV-Compatible" contents="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <div class="form-container">
+    <form>
+        <h1>Registration Form</h1>
+        <label>
+            NAME:
+            <input type="text" id="txtName" required placeholder="Enter Your Name"/>
+        </label>
+        <br>
+        <label>
+            Email:
+            <input type="email" id="txtEmail" required placeholder="Enter Your Email"/>
+        </label>
+        <br>
+        <label>
+            PHONE No:
+            <input type="text" id="txtPhone" required placeholder="Enter Your Number"/>
+        </label>
+        <br>
+        <div class="Gender">
+            <label> Gender:</label>
+            <select id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        
+        
+            <label for="dtDOB">DOB:</label>
+            <input type="date" id="txtDOB" required placeholder="Enter Date of Birth" />
+        </div>
+        <div>
+        <label> Address:
+        </label>
+        <input type="text" id="txtAddress" required placeholder="Enter Address" />
+        <input type="text" id="txtAddress2" required placeholder="Enter Address Line 2" />
+        </div>
+      <div class="row">
+            <input type="text" id="txtCountry" required placeholder="Enter Country" >
+            <input type="text" id="txtCity" required placeholder="Enter City" >
+        </div>
+        <div class="row">
+            <input type="text" id="txtState" required placeholder="Enter State" >
+            <input type="text" id="txtZip" required placeholder="Enter Zip Code" >
+        </div>
+        <br>
+           <div class="password-container">
+            <label for="pwdpassword">password:</label>
+        
+        <input type="password" id="pwdpassword" required placeholder="Enter Password">
+        <label class="show">
+        <input type="checkbox" id="showpassword" onclick="togglePassword()">
+        show password
+        </label>
+        </div>
+        <script>
+            function togglePassword() {
+                var passwordInput = document.getElementById("pwdpassword");
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                } else {
+                    passwordInput.type = "password";
+                }
+            }
+        </script>
+
+<br>
+    
+    <br>
+    
+   <input type="submit" value="Submit" id="Submit">
+    </form>
+    </div>
+    
+   
+
+        
+
+    </form>
+    
+</body>
+</html>
